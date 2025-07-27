@@ -40,7 +40,7 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="container mx-auto px-6 text-center relative z-10 pt-6 sm:pt-8">
+      <div className="container mx-auto px-6 text-center relative z-10 pt-14 sm:pt-8">
         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-800 dark:text-white mb-6">
             Hi, I'm <span className="text-blue-600 dark:text-blue-400">S.M.Zaid</span>
@@ -92,7 +92,7 @@ export default function Hero() {
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2"
       >
         <ChevronDown className="w-6 h-6 text-gray-400 dark:text-gray-500" />
       </motion.div>
