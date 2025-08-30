@@ -28,12 +28,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "Sentinel",
+    title: "Guards Connect",
     category: "Web",
     image: "/sentinelLogo.png",
     description: "Developed a role-based security guard management platform. Features included different roles,  one-on-one chat using sockets, secure authentication, shift scheduling and attendance tracking.",
     tech: ["React", "Tailwind CSS", "Redux", "Saga", "Sockets", "Firebase"],
-    liveUrl: "https://app.sts.5stardesigners.net/login",
+    liveUrl: "https://app.guardsconnect.com/",
     githubUrl: "#",
   },
   {
@@ -160,13 +160,14 @@ export default function Work() {
                 className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
               >
                 <div className="relative group">
-                  <Image
+                  {/* <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
                     width={400}
                     height={300}
-                    className="w-full h-48 object-cover object-bottom"
-                  />
+                    className="w-full h-48 object-contain object-center"
+                  /> */}
+                  <div className="w-full h-[200px] bg-[#1A1A1A]"></div>
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
                     <motion.a
                       href={project.liveUrl}
